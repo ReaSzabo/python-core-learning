@@ -23,16 +23,16 @@ if __name__ == '__main__':
     # tomb bejarasa egyszeruen
     print("For ciklus:")
 
-    for elem in tomb:
-        print(elem)
+    for tomb_eleme in tomb:
+        print(tomb_eleme)
 
 
 
     # Ha olyan nyert, aki nem tud fozni, akkor ird ki: "Aaa, gecibe!" !
     print("Damu feladat:")
 
-    tudFozni = ["Roland", "Pincer az etteremben"];
-    nemTudFozni = ["Gyozo", "Annacska", "Romeo"];
+    tudFozni = ["Roland", "Pincer az etteremben"]
+    nemTudFozni = ["Gyozo", "Annacska", "Romeo"]
 
     nyertes = "Gyozo";
 
@@ -52,3 +52,14 @@ if __name__ == '__main__':
     for x in range(0, 10):
         if x % 2 == 0:
             print(x)
+
+
+    # resztomb
+    print("Resztomb:")
+
+    tomb = ["Andika", "Mate", "Doroti", "Dorci"]
+
+    for index, value in enumerate(tomb):
+        if index > 1:
+            print("Ennyiedik Elem: " + str(index))
+            print("Hozzatartozo ertek: " + value)
