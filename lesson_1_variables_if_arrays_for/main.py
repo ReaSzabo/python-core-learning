@@ -1,14 +1,19 @@
-# Minden programodnak igy kell kezdodnie.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Minden programodnak így kell kezdődnie.
 if __name__ == '__main__':
 
     # nem console.log() van, hanem print()
     print("Szia Andika")
 
-    # lefuttatni a programot a zold haromszoggel lehet fent
+    # lefuttatni a programot a zöld haromszoggel lehet fent
 
-    # a parancsok vegere nem kell pontosvesszo
+    # a parancsok vegere nem kell pontosvessző
 
-    # valtozo deklaralashoz nem kell "var"
+    # változó deklaráláshoz nem kell "var"
+
+    szoveg = "szövegke"
 
     # if hasznalata
     # 1. if keyword
@@ -30,17 +35,31 @@ if __name__ == '__main__':
     hazugsag = False
 
     # tomb
-    tomb = [1, 3, 5]
+    tomb = ["Teodor", "Sanyika", "Bilbó"]
 
-    print("Elso elem: " + str(tomb[0]))
+    print("Elso elem: " + tomb[0])
 
     for elemke in tomb:
-        print("Az elemem: " + str(elemke) )
+        print("Az aktuális elem: " + elemke)
 
     # object
-    objektum = {
-        "nev": "Andi"
+    szemely = {
+        "nev": "Andi",
+        "kor": 27,
+        "szep": True
     }
 
-    print(objektum)
-    print(objektum['nev'])
+    print(szemely)
+    print("A személy neve: " + szemely['nev'])
+
+    butor = {
+        "tipus": "szék",
+        "labak": 4,
+        "muanyag": False
+    }
+
+    print(butor)
+    # a lábat számmal adtuk meg, viszont a plusz jellel egy stringhez próbáljuk hozzákötni
+    # a str(...) függvénnyel bármi stringgé alakítható
+    print("A bútor lábainak száma: " + str(butor['labak']))
+

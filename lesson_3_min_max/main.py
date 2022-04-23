@@ -1,4 +1,7 @@
-# Minden programodnak igy kell kezdodnie.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Minden programodnak így kell kezdodnie.
 if __name__ == '__main__':
 
     ### Find max

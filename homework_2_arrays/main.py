@@ -1,34 +1,37 @@
-# Minden programodnak igy kell kezdodnie.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Minden programodnak így kell kezdődnie.
 if __name__ == '__main__':
 
-    # Ird ki a tomb hosszat!
+    # Írd ki a tömb hosszát!
     array1 = [1, 2, 3, 4, 5]
 
 
 
-    # Ird ki a tomb elso elemet!
+    # Írd ki a tömb első elemét!
     array2 = [1, 2, 3, 4, 5]
 
 
 
-    # Ird ki a tomb utolso elemet!
+    # Írd ki a tömb utolsó elemét!
     array3 = [1, 2, 3, 4, 5]
 
 
 
-    # Ird ki a nagyobbik (tobb elemu) tomb meretet!
-    # (Ne ranezesre mondd meg, hogy melyik a hosszabb, hanem if-fel viszgald meg!)
+    # Írd ki a nagyobbik (több elemű) tömb méretét!
+    # (Ne ránézésre mondd meg, hogy melyik a hosszabb, hanem if-fel vizsgáld meg!)
     array4 = [1, 3, 5, 6, 7]
     array5 = [4, 6, 7]
 
 
 
-    # A kisebbik (kevesebb elemu) tombhoz add hozza a 100-as szamot!
+    # A kisebbik (kevesebb elemű) tömbhoz add hozzá a 100-as számot! (Legyen az is a tömb eleme)
     array6 = [1, 3, 5, 6, 7]
     array7 = [4, 6, 7]
 
 
 
-    # For ciklussal ird ki a szamokat 5-tol 10-ig
+    # For ciklussal írd ki a számokat 5-tol 10-ig
 
 

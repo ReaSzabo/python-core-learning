@@ -1,16 +1,28 @@
-# Minden programodnak igy kell kezdodnie.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Minden programodnak így kell kezdődnie.
 if __name__ == '__main__':
 
-    print("Tomb hossza:")
+    print("Tömb hossza:")
 
-    # tomb hossza
+    # tömb hossza
     tomb = ["szo1", "szo2"]
     print(len(tomb))     # ezt irja ki: 2
 
-    # hozzaadas a tombhoz
+    # a tömb első eleme
+    print("Tömb első eleme: " + tomb[0])
+
+    # a tömb második eleme
+    print("Tömb második eleme: " + tomb[1])
+
+    # a tömb utolsó eleme
+    print("Tömb utolsó eleme: " + tomb[len(tomb)-1])
+
+    # új elem hozzáadása a tömbhöz
     tomb.append("szo4")
 
-    print("Tomb uj erteke:" + str(tomb))
+    print("Tömb új értéke: " + str(tomb))
 
 
     # maradekos osztas
@@ -20,7 +32,7 @@ if __name__ == '__main__':
 
 
     # for ciklus
-    # tomb bejarasa egyszeruen
+    # tömb bejárása egyszerűen
     print("For ciklus:")
 
     for tomb_eleme in tomb:
@@ -28,7 +40,7 @@ if __name__ == '__main__':
 
 
 
-    # Ha olyan nyert, aki nem tud fozni, akkor ird ki: "Aaa, gecibe!" !
+    # Ha olyan nyert, aki nem tud főzni, akkor írd ki: "Aaa, gecibe!" !
     print("Damu feladat:")
 
     tudFozni = ["Roland", "Pincer az etteremben"]
@@ -42,24 +54,23 @@ if __name__ == '__main__':
 
 
 
-    # szamok kiiratasa 0-tol 9-ig
-    print("Szamok kiirasa 0-tol 9-ig:")
+    # számok kiiratása 0-tol 9-ig
+    print("Számok kiirasa 0-tol 9-ig:")
     for x in range(0, 10):
         print(x)
 
-    # paros szamok kiiratasa 0-tol 9-ig
-    print("Paros szamok kiirasa:")
+    # páros számok kiiratása 0-tol 9-ig
+    print("Páros szamok kiirasa:")
     for x in range(0, 10):
         if x % 2 == 0:
             print(x)
 
 
-    # resztomb
-    print("Resztomb:")
+    # résztömb
+    print("Tömb és indexek:")
 
     tomb = ["Andika", "Mate", "Doroti", "Dorci"]
 
     for index, value in enumerate(tomb):
-        if index > 1:
-            print("Ennyiedik Elem: " + str(index))
-            print("Hozzatartozo ertek: " + value)
+        print("Ennyiedik elem: " + str(index))
+        print("Hozzátartozó érték: " + value)
