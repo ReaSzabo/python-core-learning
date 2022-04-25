@@ -25,7 +25,7 @@ if __name__ == '__main__':
     print("Max of array: " + str(max))
 
 
-    ### Keresd meg a legnagyobb 100 alatti erteket a tombben!
+    ### Keresd meg a legnagyobb 100 alatti értéket a tömbben!
 
     # We declare a helper variable
     # We add a very small value for that

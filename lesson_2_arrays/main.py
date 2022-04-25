@@ -64,13 +64,3 @@ if __name__ == '__main__':
     for x in range(0, 10):
         if x % 2 == 0:
             print(x)
-
-
-    # résztömb
-    print("Tömb és indexek:")
-
-    tomb = ["Andika", "Mate", "Doroti", "Dorci"]
-
-    for index, value in enumerate(tomb):
-        print("Ennyiedik elem: " + str(index))
-        print("Hozzátartozó érték: " + value)

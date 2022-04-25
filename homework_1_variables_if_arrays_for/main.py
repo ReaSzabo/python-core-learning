@@ -24,8 +24,3 @@ if __name__ == '__main__':
     # Keszits egy tombot, amiben boolean ertekek vannak,
     # Írd ki őket for ciklussal!
 
-
-
-    # Keszits egy objektumot, amiben egy flakon viz adatait adod meg!
-    # Legyen 4 property-je: anyag, űrmérték, bubis, hőmérséklet!
-    # Adj nekik értéket: pl "anyag": "uveg"

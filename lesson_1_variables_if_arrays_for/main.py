@@ -42,24 +42,3 @@ if __name__ == '__main__':
     for elemke in tomb:
         print("Az aktuális elem: " + elemke)
 
-    # object
-    szemely = {
-        "nev": "Andi",
-        "kor": 27,
-        "szep": True
-    }
-
-    print(szemely)
-    print("A személy neve: " + szemely['nev'])
-
-    butor = {
-        "tipus": "szék",
-        "labak": 4,
-        "muanyag": False
-    }
-
-    print(butor)
-    # a lábat számmal adtuk meg, viszont a plusz jellel egy stringhez próbáljuk hozzákötni
-    # a str(...) függvénnyel bármi stringgé alakítható
-    print("A bútor lábainak száma: " + str(butor['labak']))
-
