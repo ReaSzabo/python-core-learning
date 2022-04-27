@@ -46,7 +46,7 @@ if __name__ == '__main__':
     tudFozni = ["Roland", "Pincer az etteremben"]
     nemTudFozni = ["Gyozo", "Annacska", "Romeo"]
 
-    nyertes = "Gyozo";
+    nyertes = "Gyozo"
 
     if nyertes in nemTudFozni:
         print("Aaa, gecibe!")
