@@ -26,14 +26,15 @@ print("Második szavak:")
 for mondat in mondatok:
     print(mondat[1]) # Kiírja a mondatok második szavát stringként. Pl. "Andi"
 
-# Képzeljünk el egy helyzetet, amikor az első szót megvizsgáljuk, és ha teljesül a feltétel, akkor kiírjuk a másodikat.
+# Képzeljünk el egy helyzetet, amikor az első szót megvizsgáljuk if-fel, és ha teljesül a feltétel, akkor kiírjuk a másodikat.
 print("Feltétel:")
 for mondat in mondatok:
     if mondat[0] == 'Szia':
         print(mondat[1])
 
 # Na most, a feladatod az, hogy kérj be egy szót a felhasználótól.
-# Ha a bekért szó a mondat első szavával megegyezik, akkor írd ki a második szót.
+# Ha a bekért szó a mondat első szavával megegyezik, akkor írd ki a mondat második szavát.
+# Pl, ha a bekért szó "Hogy", akkor írd ki "vagy".
 # Nem baj, ha nem sikerül, elég nehéz a feladat!!!!!
 
 print("Bekéréses feladat:")
