@@ -52,8 +52,7 @@ if __name__ == '__main__':
 
     # For ciklussal írd ki a számokat 5-tol 10-ig
 
-    szamok = [1, 2, 3, 4, 5]
 
-    for i in szamok:
+    for i in range(1, 6):
         print(i)
 

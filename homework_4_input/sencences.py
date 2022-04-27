@@ -38,3 +38,9 @@ for mondat in mondatok:
 # Nem baj, ha nem sikerül, elég nehéz a feladat!!!!!
 
 print("Bekéréses feladat:")
+
+bekertSzo = input("Adjál meg egy szót ide neh: ")
+
+for mondat in mondatok:
+    if str(bekertSzo) == mondat[0]:
+        print(mondat[1])

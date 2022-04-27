@@ -6,3 +6,8 @@
 # 100
 # 200
 nagySzamok = [100, 49, 10, 55, 200]
+
+bekertSzam = input("Adj meg egy számot: ")
+for i in nagySzamok:
+    if i > int(bekertSzam):
+        print(i)
