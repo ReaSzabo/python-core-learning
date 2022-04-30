@@ -28,7 +28,7 @@ rains = [
     ["Miskolc", "0920", "észak"],
 ]
 
-# Írd ki, hogy hol és mikor esett az eső, amikor déli szél volt.
+# Írd ki, az összes esetet, amikor déli szél volt! Tudasd, hogy hol és mikor történt!
 # Pl. "Debrecen 08:00-kor déli szél volt".
 
 # Hogy tudjuk kiírni szépen az időpontokat:
