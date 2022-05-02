@@ -1,0 +1,11 @@
+Budapest 0800 eszak
+Budapest 0900 nyugat
+Budapest 1000 eszak
+Budapest 1500 kelet
+Budapest 2000 del
+Debrecen 0800 nyugat
+Debrecen 1530 eszak
+Debrecen 1930 kelet
+Szeged 0700 kelet
+Szeged 0900 eszak
+Szeged 1900 nyugat
