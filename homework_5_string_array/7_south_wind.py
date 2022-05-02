@@ -32,7 +32,14 @@ rains = [
 # Pl. "Debrecen 08:00-kor déli szél volt".
 
 # Hogy tudjuk kiírni szépen az időpontokat:
-ido = "0800"
-varos = "Debrecen"
-print(varos + " " + ido[0] + ido[1] + ':' + ido[2] + ido[3] + " déli szél volt")
+#ido = "0800"
+#varos = "Debrecen"
+#print(varos + " " + ido[0] + ido[1] + ':' + ido[2] + ido[3] + " déli szél volt")
 # Ez csak help, kitörölheted :)
+
+
+for i in rains:
+    if i[2] == "dél":
+        varos = i[0]
+        ido = i[1]
+        print(varos + " " + ido[0] + ido[1] + ":"  + ido[2] + ido [3] + "-kor déli szél volt.")

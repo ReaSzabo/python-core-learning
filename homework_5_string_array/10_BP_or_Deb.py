@@ -29,3 +29,18 @@ rains = [
 ]
 
 # Vizsgáld meg (számlálókkal), hogy Budapesti vagy Debreceni eső volt gyakrabban!
+
+budapest = 0
+debrecen = 0
+
+for i in rains:
+    if str(i[0]) == "Budapest":
+        budapest = int(budapest) + 1
+    if str(i[0]) == "Debrecen":
+        debrecen = int(debrecen) + 1
+
+
+if int(budapest) > int(debrecen):
+    print("Több budapesti eső volt, mint debreceni. Budapesti esők száma: " + str(budapest) + ", Debreceni esők száma: " + str(debrecen))
+else:
+    print("Több debreceni eső volt, mint budapesti. Debreceni esők száma: " + str(debrecen) + ", Budapesti esők száma: " + str(budapest))

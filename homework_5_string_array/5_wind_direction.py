@@ -32,3 +32,11 @@ rains = [
 # Kérj be egy várost a felhasználótól és írd ki, hogy 08:00-kor milyen irányú szél fújt!
 # Pl. input -> "Debrecen", output -> "dél"
 
+varos = input("Adj meg egy várost: ")
+
+for i in rains:
+    if str(i[0]) == str(varos):
+        if str(i[1]) == "0800":
+            print(i[2])
+
+

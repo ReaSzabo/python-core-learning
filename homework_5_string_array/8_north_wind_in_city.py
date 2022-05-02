@@ -30,3 +30,10 @@ rains = [
 
 # Kérj be egy várost a felhasználótól!
 # Ha volt északi szél a városban, akkor írd ki: "Volt északi szél ekkor: 08:20"
+
+bekert = input("Adj meg egy várost: ")
+for i in rains:
+    if str(i[0]) == str(bekert):
+        if str(i[2]) == "észak":
+            ido = i[1]
+            print("Volt északi szel a városban ekkor: " + ido[0] + ido[1] + ":" + ido[2] + ido[3])

@@ -8,23 +8,22 @@
 # Pl "1812" -> 18:12 (18 óraa 12 perc).
 
 rains = [
-    ["Budapest", "0800"],
     ["Budapest", "0820"],
     ["Budapest", "1000"],
     ["Budapest", "1230"],
-    ["Budapest", "1730"],
-    ["Budapest", "1920"],
-    ["Debrecen", "0920"],
-    ["Debrecen", "1020"],
-    ["Debrecen", "1115"],
-    ["Debrecen", "1900"],
-    ["Szeged", "0600"],
-    ["Szeged", "0700"],
-    ["Szeged", "0800"],
-    ["Miskolc", "0800"],
-    ["Miskolc", "0920"],
-
+    ["Budapest", "0800"],
 ]
 
-# Kérj be egy várost a felhasználótól és írd ki, hogy esett-e ott délután az eső!
-# Pl. input -> "Debrecen", output -> "Esett az eső délután"
+esett = False
+varos = input("Adj meg egy várost: ")
+
+for i in rains:
+    if str(i[0]) == str(varos):
+        if int(i[1]) > 1200:
+            esett = True
+
+if esett == True:
+    print("A megadott városban esett az eső délután.")
+else:
+    print("A megadott városban nem esett az eső délután.")
+

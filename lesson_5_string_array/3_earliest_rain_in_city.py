@@ -30,7 +30,7 @@ rains = [
 # Nézzük meg, hogy a felhasználótól bekért városban, mikor esett először az eső az országban.
 city = input("Kérem a várost: ")
 min_time = "2400"
-print(city)
+
 for rain in rains:
     if rain[0] == city:
         if int(rain[1]) < int(min_time):

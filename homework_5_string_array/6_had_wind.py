@@ -16,7 +16,7 @@ rains = [
     ["Budapest", "1230", "nyugat"],
     ["Budapest", "1730", "kelet"],
     ["Budapest", "1920", "nyugat"],
-    ["Debrecen", "0800", "dél"],
+    ["Debrecen", "0800", "NA"],
     ["Debrecen", "0920", "észak"],
     ["Debrecen", "1020", "nyugat"],
     ["Debrecen", "1115", "kelet"],
@@ -32,3 +32,18 @@ rains = [
 # Kérj be egy várost a felhasználótól és írd ki, hogy 08:00-kor milyen irányú szél fújt!
 # Pl. input -> "Debrecen", output -> "dél"
 # Ha nem fújt a szél, akkor a szélirány helyett írd ki: "Nem fújt a szél.".
+
+varos = input("Adj meg egy várost: ")
+
+szel = "NA"
+
+for i in rains:
+    if str(i[0]) == str(varos):
+        if int(i[1]) == 800:
+            szel = str(i[2])
+
+if szel != str("NA"):
+    print(szel)
+else:
+    print("Nem fújt a szél")
+

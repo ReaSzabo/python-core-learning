@@ -29,3 +29,11 @@ rains = [
 
 # Kérj be egy várost a felhasználótól és írd ki, hány eső volt abban a városban!
 # Pl. input -> "Debrecen", output -> "4"
+
+counter = 1
+varos = input("Nevezz meg egy várost: ")
+for i in rains:
+    if i[0] == str(varos):
+        counter = int(counter) + 1
+
+print(int(counter) - 1)

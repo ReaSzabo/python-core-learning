@@ -29,3 +29,18 @@ rains = [
 ]
 
 # Vizsgáld meg (számlálókkal), hogy északi vagy déli szél bejegyzés volt gyakrabban!
+
+eszakiSzel = 0
+deliSzel = 0
+
+for i in rains:
+    if str(i[2]) == "észak":
+        eszakiSzel = int(eszakiSzel) + 1
+    if str(i[2]) == "dél":
+        deliSzel = int(deliSzel) + 1
+
+
+if int(eszakiSzel) > int(deliSzel):
+    print("Több északi szél volt, mint déli. Északi szelek száma: " + str(eszakiSzel) + ", Déli szelek száma: " + str(deliSzel))
+else:
+    print("Több déli szél volt, mint északi. Déli szelek száma: " + str(deliSzel) + ", Északi szelek száma: " + str(eszakiSzel))

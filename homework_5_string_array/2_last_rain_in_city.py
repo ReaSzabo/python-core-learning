@@ -29,3 +29,12 @@ rains = [
 
 # Kérj be egy várost a felhasználótól és add meg, mikor volt a legutolsó eső ott!
 # Pl. input -> "Debrecen", output -> "1900"
+
+varos = input("Adj meg egy várost: ")
+maxika = 0000
+for i in rains:
+    if i[0] == str(varos):
+        if int(maxika) < int(i[1]):
+            maxika = i[1]
+
+print(maxika)

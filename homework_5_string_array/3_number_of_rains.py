@@ -29,3 +29,14 @@ rains = [
 
 # Kérj be egy várost a felhasználótól és írd ki, hogy 3-nál több eső volt-e ott!
 # Pl. input -> "Debrecen", output -> "Háromnál több eső volt."
+
+counter = 0
+varos = input("Adj meg egy várost: ")
+for i in rains:
+    if str(i[0]) == str(varos):
+        counter = int(counter) + 1
+
+if int(counter) > 3:
+    print("Háromnál több eső volt a megadott városban.")
+else:
+    print("Három vagy annál kevesebb eső volt a megadott városban.")
