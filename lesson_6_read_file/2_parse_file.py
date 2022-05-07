@@ -12,4 +12,4 @@ with open("szoveges_allomany.txt") as file:
         ido = sorocska[1]
         szel = sorocska[2]
 
-        print(sorocska)
+        print(ido)

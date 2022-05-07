@@ -6,9 +6,10 @@
 
 # 1. feladat
 with open("szoveges_allomany.txt") as file:
-    # 2. feladat
-    print("2. feladat:")
-    minimalna = "0000"
+
+
+    tomb = []
+
     for sorocska in file:
         # kiszedi a felesleges spaceket és entereket
         sorocska = sorocska.strip()
@@ -16,11 +17,14 @@ with open("szoveges_allomany.txt") as file:
         # a stringből tömböt csinál
         sorocska = sorocska.split()
 
-        varos = sorocska[0]
-        ido = sorocska[1]
-        szel = sorocska[2]
+        tomb.append(sorocska)
 
-        if int(minimalna) < int(ido):
-            minimalna = ido
+    # 2. feladat
+    print("2. feladat:")
+
+    minimalna = "2400"
+    for eso in tomb:
+        if int(minimalna) > int(eso[1]):
+            minimalna = eso[1]
 
     print("A legelső eső ma: " + minimalna)
