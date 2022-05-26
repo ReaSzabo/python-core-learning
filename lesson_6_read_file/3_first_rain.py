@@ -1,30 +1,27 @@
 # coding: utf-8
 
-# 1. feladat: Olvassa be a fájl tartalmát!
-# 2. feladat: Írja ki a legkorábbi eső időpontját!
+# Task #1: Read the data from the file.
+# Task #2: Print the earliest rain.
 
 
 # 1. feladat
-with open("szoveges_allomany.txt") as file:
+with open("data.txt") as file:
 
 
-    tomb = []
+    # Task #1
 
-    for sorocska in file:
-        # kiszedi a felesleges spaceket és entereket
-        sorocska = sorocska.strip()
+    array = []
 
-        # a stringből tömböt csinál
-        sorocska = sorocska.split()
+    for line in file:
+        line = line.strip()
+        line = line.split()
+        array.append(line)
 
-        tomb.append(sorocska)
+    # Task #2
 
-    # 2. feladat
-    print("2. feladat:")
+    min_time = "2400"
+    for rain in array:
+        if int(min_time) > int(rain[1]):
+            min_time = rain[1]
 
-    minimalna = "2400"
-    for eso in tomb:
-        if int(minimalna) > int(eso[1]):
-            minimalna = eso[1]
-
-    print("A legelső eső ma: " + minimalna)
+    print("First rain today: " + min_time)

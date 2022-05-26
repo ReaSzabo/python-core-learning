@@ -1,44 +1,44 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# coding: utf-8
 
-# Minden programodnak így kell kezdődnie.
+# Tt's boilerplate code that protects users from accidentally invoking the script when they didn't intend to
 if __name__ == '__main__':
 
-    # nem console.log() van, hanem print()
-    print("Szia Andika")
+    # We use the print() command to print text to the terminal.
+    print("Hello Andika")
 
-    # lefuttatni a programot a zöld haromszoggel lehet fent
+    # In PyCharm you can run the scripts with the green triangle button.
 
-    # a parancsok vegere nem kell pontosvessző
+    # The command lines do not need semicolon at the end.
 
-    # változó deklaráláshoz nem kell "var"
+    # We do not need "var" to declare a variable.
 
-    szoveg = "szövegke"
+    text = "this is text"
 
-    # if hasznalata
+    # Ese of "if"
     # 1. if keyword
-    # 2. feltetel, de zarojelek nelkul (csak space kell a feltetel es az if koze)
-    # 3. kettospont
-    # 4. a vegrehajtando blokknak 4 szokozzel beljebb kell kerulnie
+    # 2. condition (without brace)
+    # 3. colon
+    # 4. the block is marked with a 4-space intention
 
-    szam = 4
-    if szam < 5:
-        print("Kis szam")
+    my_number = 4
+    if my_number < 5:
+        print("Small number")
 
-    if szam < 5 and szam != 0:
-        print("Nem nulla es kicsi")
+    if my_number < 5 and my_number != 0:
+        print("Small number and not zero")
 
-    szoveg = "Ez egy string"
+    text = "This is a string"
 
-    # A boolean ertekeket nagy betuvel kezdjuk
-    igazsag = True
-    hazugsag = False
+    # boolean
+    truth = True
+    lie = False
 
-    # tomb
-    tomb = ["Teodor", "Sanyika", "Bilbó"]
+    # array
+    array = ["Gandalf", "Aragorn", "Theoden"]
 
-    print("Elso elem: " + tomb[0])
+    print("First element: " + array[0])
 
-    for elemke in tomb:
-        print("Az aktuális elem: " + elemke)
+    for element in array:
+        print("Actual element: " + element)
 

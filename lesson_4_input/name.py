@@ -1,4 +1,4 @@
 # coding: utf-8
 
-name = raw_input("Kérem adja meg a nevét: ")
-print("A felhasználó neve: " + name)
+name = input("Please type your name: ")
+print("Name of user: " + name)

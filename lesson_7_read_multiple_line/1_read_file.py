@@ -1,31 +1,31 @@
 # coding: utf-8
 
 array = []
-with open("szoveges_allomany.txt") as file:
-    for sor in file:
+with open("data.txt") as file:
+    for line in file:
 
-        epizod = []
+        episode = []
 
-        # datum
-        sor = sor.strip()
-        epizod.append(sor)
+        # date
+        line = line.strip()
+        episode.append(line)
 
-        # sorozat neve
-        sor = next(file).strip()
-        epizod.append(sor)
+        # name of series
+        line = next(file).strip()
+        episode.append(line)
 
-        # aktualis resz
-        sor = next(file).strip()
-        epizod.append(sor)
+        # episode
+        line = next(file).strip()
+        episode.append(line)
 
-        # hossz
-        sor = next(file).strip()
-        epizod.append(sor)
+        # length
+        line = next(file).strip()
+        episode.append(line)
 
-        # megnezte-e
-        sor = next(file).strip()
-        epizod.append(sor)
+        # is watched
+        line = next(file).strip()
+        episode.append(line)
 
-        array.append(epizod)
+        array.append(episode)
 
     print(array)

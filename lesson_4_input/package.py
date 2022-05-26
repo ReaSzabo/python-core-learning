@@ -1,10 +1,10 @@
 # coding: utf-8
 
-array = ["doboz", "láda", "táska", "zsák", "batyu", "tarisznya", "puttony", "skatulya", "szelence", "Chanel"]
+array = ["box", "bad", "handbag", "suitcase", "pouch", "luggage", "package"]
 
-thing = raw_input("Kérem adja meg mibe akar pakolni: ")
+thing = input("What do you want to pack in? ")
 
 if thing in array:
-    print("Ebbe tud pakolni.")
+    print("You can pack in it.")
 else:
-    print("Sajnálom, de ebbe nem tud pakolni. :(")
+    print("Unfortunately you cannot pack in it. :(")

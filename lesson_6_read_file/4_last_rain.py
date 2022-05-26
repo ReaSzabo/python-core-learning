@@ -1,44 +1,38 @@
 # coding: utf-8
 
-# 1. feladat: Olvassa be a fájl tartalmát!
-# 2. feladat: Írja ki a legkorábbi eső időpontját!
-# 3. feladat: Írja ki a legkésőbbi eső időpontját és helyét!
+# Task #1: Read the data from the file.
+# Task #2: Print the time of the earliest rain.
+# Task #3: Print the time and location of the latest rain.
 
 
 # 1. feladat
-with open("szoveges_allomany.txt") as file:
+with open("data.txt") as file:
 
-    tomb = []
+    # Task #1
+    array = []
 
-    for sorocska in file:
-        # kiszedi a felesleges spaceket és entereket
-        sorocska = sorocska.strip()
+    for line in file:
+        line = line.strip()
+        line = line.split()
+        array.append(line)
 
-        # a stringből tömböt csinál
-        sorocska = sorocska.split()
+    # Task #2
+    min_time = "2400"
+    for rain in array:
+        if int(min_time) > int(rain[1]):
+            min_time = rain[1]
 
-        tomb.append(sorocska)
+    print("Earliest rain today: " + min_time)
 
-    # 2. feladat
-    print("2. feladat:")
+    # Task #3
 
-    minimalna = "2400"
-    for eso in tomb:
-        if int(minimalna) > int(eso[1]):
-            minimalna = eso[1]
+    max_time = "0000"
+    max_city = ""
 
-    print("A legelső eső ma: " + minimalna)
+    for rain in array:
+        if int(max_time) < int(rain[1]):
+            max_time = rain[1]
+            max_city = rain[0]
 
-    # 3. feladat
-    print("3. feladat")
-
-    maximum_ido = "0000"
-    maximum_varosa = ""
-
-    for eso in tomb:
-        if int(maximum_ido) < int(eso[1]):
-            maximum_ido = eso[1]
-            maximum_varosa = eso[0]
-
-    print("A legutolsó eső helye és ideje: " + maximum_varosa + ", "
-          + maximum_ido[0] + maximum_ido[1] + ":" + maximum_ido[2] + maximum_ido[3])
+    print("Location and time of last rain: " + max_city + ", "
+          + max_time[0] + max_time[1] + ":" + max_time[2] + max_time[3])

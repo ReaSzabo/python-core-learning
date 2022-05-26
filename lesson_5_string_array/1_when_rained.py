@@ -1,11 +1,12 @@
 # coding: utf-8
 
-# Egy tömbben adatokat tárolunk.
-# A tömbünkben tömbök vannak.
-# A kicsi tömböknek két eleme van.
-# Az első egy város kódja, a második pedig a nap egy időpontja, amikor esett az eső.
-# Az időpontok egy négyszámjegyes formátumban szerepelnek, amik az órát és percet jelentik.
-# Pl "1812" -> 18:12 (18 óraa 12 perc).
+
+# We contain data in an array.
+# The array contains arrays.
+# The small arrays has 2 elements, information about rains in the country.
+# The first element is a city name and the second one is the time of rain.
+# The time is a 4-digits string. They are the hours and minutes in 2-digis format.
+# Pl "1812" -> 18:12 (18 hours 12 minutes).
 
 rains = [
     ["Budapest", "0800"],
@@ -27,10 +28,9 @@ rains = [
 
 ]
 
-# Próbáljunk ki valamit!
-# Kérjünk be egy időpontot a jobbágytól és nézzük meg, hogy ebben az időpontban hol esett az eső!
+# Get a time code from the user and see where it was raining that time.
 
-time = input("Kérem adja meg az időpontot: ")
+time = input("Please add a time: ")
 for rain in rains:
     if rain[1] == time:
         print(rain[0])
