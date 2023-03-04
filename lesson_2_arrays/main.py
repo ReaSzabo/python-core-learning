@@ -1,66 +1,65 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# coding: utf-8
 
-# Minden programodnak így kell kezdődnie.
 if __name__ == '__main__':
 
-    print("Tömb hossza:")
+    print("Length of array:")
 
-    # tömb hossza
-    tomb = ["szo1", "szo2"]
-    print(len(tomb))     # ezt irja ki: 2
+    # length of an array
+    array = ["word1", "word2"]
+    print(len(array))
 
-    # a tömb első eleme
-    print("Tömb első eleme: " + tomb[0])
+    # first element of array
+    print("First element of array: " + array[0])
 
-    # a tömb második eleme
-    print("Tömb második eleme: " + tomb[1])
+    # second element of array
+    print("Second element of array: " + array[1])
 
-    # a tömb utolsó eleme
-    print("Tömb utolsó eleme: " + tomb[len(tomb)-1])
+    # last element of array
+    print("Last element of array: " + array[len(array)-1])
 
-    # új elem hozzáadása a tömbhöz
-    tomb.append("szo4")
+    # add element to an array
+    array.append("word4")
 
-    print("Tömb új értéke: " + str(tomb))
-
-
-    # maradekos osztas
-    print("Maradekos osztas")
-    print(5 % 2)        # ezt irja ki: 1
+    print("New value of array: " + str(array))
 
 
-
-    # for ciklus
-    # tömb bejárása egyszerűen
-    print("For ciklus:")
-
-    for tomb_eleme in tomb:
-        print(tomb_eleme)
+    # division with remainder
+    print("division with remainder")
+    print(5 % 2)
 
 
 
+    # for loop
+    # iterate through array
+    print("For loop:")
+
+    for array_element in array:
+        print(array_element)
+
+
+    # Fun example
     # Ha olyan nyert, aki nem tud főzni, akkor írd ki: "Aaa, gecibe!" !
-    print("Damu feladat:")
+    print("Damu exercise:")
 
-    tudFozni = ["Roland", "Pincer az etteremben"]
-    nemTudFozni = ["Gyozo", "Annacska", "Romeo"]
+    can_cook = ["Roland", "Pincer az etteremben"]
+    cannot_cook = ["Gyozo", "Annacska", "Romeo"]
 
-    nyertes = "Gyozo"
+    winner = "Gyozo"
 
-    if nyertes in nemTudFozni:
+    if winner in cannot_cook:
         print("Aaa, gecibe!")
 
 
 
 
-    # számok kiiratása 0-tol 9-ig
-    print("Számok kiirasa 0-tol 9-ig:")
+    # numbers from 0 to 9
+    print("Numbers from 0 to 9: ")
     for x in range(0, 10):
         print(x)
 
-    # páros számok kiiratása 0-tol 9-ig
-    print("Páros szamok kiirasa:")
+    # even numbers from 0 to 9
+    print("Even numbers:")
     for x in range(0, 10):
         if x % 2 == 0:
             print(x)

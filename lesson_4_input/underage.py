@@ -1,10 +1,10 @@
 # coding: utf-8
 
-age = raw_input("Üdvözlöm én egy dohánybolti eladó vagyok. Kérem mondja meg hány éves: ")
+age = raw_input("Welcome to the tobacco shop, how old are you? ")
 
-# integer - egész szám
-# stringből egész számot csinálni: int()
+# integer - whole number
+# you can make integer from a string with the function "int()"
 if int(age) > 18:
-    print("Itt a cigi! 1760 Ft lesz.")
+    print("Here is you cigarette. 1780Ft, please.")
 else:
-    print("Te nem vagy 18... Legyél szíves fáradj ki az üzlethelyiségből!")
+    print("You are not old enough. Please leave the shop.")
